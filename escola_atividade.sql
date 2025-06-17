@@ -114,5 +114,8 @@ select * from curso;/*Apresentar todos os registros da entidade DISCIPLINA */
 
 update aluno set NOME="Roberta" where ID_ALUNO=2;/*Alterar o nome de um registro na entidade ALUNO */
 
-update curso set HORARIO="12:00:00" where id_curso=1;/*Alterar o nome de um registro da entidade DISCIPLINA;*/
+update curso set HORARIO="12:00:00" where id_curso=1;--Alterar o nome de um registro da entidade DISCIPLINA;
 
+delete aluno where cidade="São Paulo";--Deletar os registros da entidade ALUNO nascidos na mesma cidade
+
+delete curso where id_curso=3 and id_curso=7;
