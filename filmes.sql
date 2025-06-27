@@ -54,3 +54,9 @@ SELECT * FROM filme where ano<2000 or ano>2010;
 /*Encontre os filmes não lançados na década de 2000 e 2010*/
 SELECT * FROM filme order by ano limit 5;
 /*Descubra os 5 primeiros filmes da Pixar e seus lançamentos*/
+select * from filme where titulo like "Toy Story%";
+/*Encontre todos os filmes de toy story*/
+SELECT * FROM movies where director="John Lasseter";
+/*Encontre todos os filmes dirigidos por John Lasseter*/
+SELECT * FROM movies where director!="John Lasseter";
+/*Encontre todos os filmes não dirigidos por John Lasseter*/
