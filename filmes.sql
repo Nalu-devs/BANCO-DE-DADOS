@@ -46,5 +46,10 @@ SELECT * FROM filme where ano>=2000 and ano<=2010; /*Encontre os filmes lançado
 SELECT * FROM filme where ano<2000 or ano>2010; /*Encontre os filmes não lançados na década de 2000 e 2010*/
 SELECT * FROM filme order by ano limit 5; /*Descubra os 5 primeiros filmes da Pixar e seus lançamentos*/
 select * from filme where titulo like "Toy Story%"; /*Encontre todos os filmes de toy story*/
-SELECT * FROM movies where director="John Lasseter"; /*Encontre todos os filmes dirigidos por John Lasseter*/
-SELECT * FROM movies where director!="John Lasseter"; /*Encontre todos os filmes não dirigidos por John Lasseter*/
+SELECT * FROM filme where diretor="John Lasseter"; /*Encontre todos os filmes dirigidos por John Lasseter*/
+SELECT * FROM filme where diretor!="John Lasseter"; /*Encontre todos os filmes não dirigidos por John Lasseter*/
+select * from filme where titulo like "wall-%";/*Encontre todos os filmes de Wall-*/
+SELECT distinct diretor FROM filme order by diretor; /*Mostrar os diretores em ordem alfabetica sem duplicar*/
+select * from filme order by ano desc limit 4;/*Lista dos últimos quatro filmes da Pixar lançados (ordenados do mais recente para o menos recente)*/
+select * from movies order by title asc limit 5;/*Liste os cinco primeiros filmes da Pixar em ordem alfabética*/
+select * from movies order by title asc limit 5 offset 5;/*Lista dos próximos cinco filmes da Pixar em ordem alfabética*/
