@@ -2,14 +2,13 @@ create database cidadesAmericanas;
 
 use cidadesAmericanas;
 
-create table
-    cidades_norte_americanas (
-        cidade varchar(200),
-        país varchar(200),
-        populacao numeric(15),
-        latitude numeric(15),
-        longitude numeric(15)
-    );
+create table cidades_norte_americanas (
+    cidade varchar(200),
+    país varchar(200),
+    populacao numeric(15),
+    latitude numeric(15),
+    longitude numeric(15)
+);
 
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
