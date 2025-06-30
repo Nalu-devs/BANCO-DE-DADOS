@@ -19,7 +19,7 @@ values
         1500800,
         20.659699,
         -103.349609
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -29,7 +29,7 @@ values
         2795060,
         43.653226,
         -79.383184
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -39,7 +39,7 @@ values
         2195914,
         29.760427,
         -95.369803
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -49,7 +49,7 @@ values
         8405837,
         40.712784,
         -74.005941
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -59,7 +59,7 @@ values
         1553165,
         39.952584,
         -75.165222
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -73,7 +73,7 @@ values
         8555500,
         19.432608,
         -99.133208
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -83,7 +83,7 @@ values
         1513367,
         33.448377,
         -112.074037
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -93,7 +93,7 @@ values
         3884307,
         34.052234,
         -118.243685
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -103,7 +103,7 @@ values
         1742000,
         19.601841,
         -99.050674
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -113,7 +113,7 @@ values
         1717767,
         45.501689,
         -73.567256
-    )
+    );
 insert into
     cidades_norte_americanas (cidade, país, populacao, latitude, longitude)
 values
@@ -123,7 +123,7 @@ values
         2718782,
         41.878114,
         -87.629798
-    )
+    );
 
 select cidade, populacao from cidades_norte_americanas where país="Canada";-- Liste todas as cidades canadenses e suas populações
 select cidade from cidades_norte_americanas where país="United States" order by latitude desc; /*Ordene todas as cidades dos Estados Unidos por latitude, de norte a sul*/
