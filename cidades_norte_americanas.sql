@@ -124,3 +124,9 @@ values
         41.878114,
         -87.629798
     )
+
+select cidade, populacao from cidades_norte_americanas where país="Canada";-- Liste todas as cidades canadenses e suas populações
+select cidade from cidades_norte_americanas where país="United States" order by latitude desc; /*Ordene todas as cidades dos Estados Unidos por latitude, de norte a sul*/
+select cidade from cidades_norte_americanas where longitude<-87.629798 order by longitude;/*Liste todas as cidades a oeste de Chicago, ordenadas de oeste para leste*/
+select cidade from cidades_norte_americanas where país="Mexico" order by populacao desc limit 2;/*Liste as duas maiores cidades do México (por população)*/
+select cidade from cidades_norte_americanas where país="United States" order by populacao desc limit 2 offset 2;/*Liste a terceira e a quarta maiores cidades (por população) dos Estados Unidos e sua população*/
